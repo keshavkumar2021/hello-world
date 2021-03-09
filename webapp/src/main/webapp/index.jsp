@@ -1,2 +1,1 @@
-<h1> Hello, Welcome to Simple DevOps Project !!   </h1>
-<h2> Welcome, Welcome! </h2>
+<h1> Welcome, Welcome! </h1>
