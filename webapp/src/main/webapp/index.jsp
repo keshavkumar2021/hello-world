@@ -25,7 +25,7 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Keshav Kumar</h1>
+								<h1>Hi, I'm Keshav Kumar</h1>
 								<p><!--[-->Hello there! Hope you're having a great day!<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
