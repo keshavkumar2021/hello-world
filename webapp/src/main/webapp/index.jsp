@@ -52,7 +52,20 @@
 of Security. Highly dutiful professional with proven ability to confidently interact with different stakeholders
 with superior communication skills, both verbal and written. Recently cleared the CISSP exam showcasing
 abilities in Information Security Leadership & Operations and is looking for a new challenge.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>KEY SKILLS</p>
+								 <ul>
+  									<li>Overall broad Knowledge on the various disciplines in Cybersecurity spanning the 8 domains of (ISC)2
+Common body of Knowledge such as GRC, IAM, SOC, Asset & Network Security etc.</li>
+  									<li>Expertise in explaining technical security concepts to stakeholders in non-technical business language</li>
+  									<li>Risk Management</li>
+									 <li>Process Implementation & Improvement</li>
+									 <li>Client/Customer Interaction</li>
+									 <li>General Security Control Concepts & Implementations</li>
+									 <li>Team & Project Management</li>
+									 <li>Creative and constructive solutions to solve complications</li>
+									 <li>Ability to take direction, learn quickly, work independently, and maintain a level of professional
+skepticism</li>
+								 </ul> 
 							</article>
 
 						<!-- Work -->
