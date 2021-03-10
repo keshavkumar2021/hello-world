@@ -34,7 +34,7 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Work</a></li>
-								<li><a href="#about">Certifications</a></li>
+								<li><a href="#about">Education</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -78,10 +78,11 @@ skepticism</li>
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">Certifications</h2>
+								<h2 class="major">Education</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<ul>
-									<li>Associate of (ISC)² - CISSP</li>
+									<li>Bachelor of Computer Science Engineering</li>
+									<li>Associate of (ISC)<sup>2</sup> - CISSP</li>
 									<li>Certified Ethical Hacker - CEH</li>
 									<li>Microsoft Certified Azure Administrator</li>
 									<li>AWS Certified Cloud Practitioner</li>
