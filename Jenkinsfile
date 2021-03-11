@@ -38,8 +38,7 @@ pipeline {
    
     stage ('Deploy-to-Tomcat'){
      steps {
-      sshagent(['ansadmin']) {
-       sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ansadmin@54.197.155.33:/home/ansadmin/temptest/webapp.war'
+sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker', remoteDirectorySDF: false, removePrefix: 'webapp/target', sourceFiles: 'webapp/target/*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
       }
      }
    } 
