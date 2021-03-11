@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>!Welcome!</title>
+		<title>Welcome!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,7 +26,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->Good Morning! Hope you're having a great day!<!--]--><br />
+								<p><!--[-->Greetings! Hope you're having a great day!<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
