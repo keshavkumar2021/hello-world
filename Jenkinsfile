@@ -39,7 +39,7 @@ pipeline {
     stage ('Deploy-to-Tomcat'){
      steps {
 //      sshagent(['tomcat']) {
-       sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ansadmin@ansible-server:/home/ansadmin/temptest/webapp.war'
+       sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ansadmin@54.197.155.33:/home/ansadmin/temptest/webapp.war'
 //      }
      }
    } 
