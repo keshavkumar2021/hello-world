@@ -38,7 +38,7 @@ pipeline {
    
     stage ('Deploy-to-Tomcat'){
      steps {
-      sshagent(['ansadmin']) {
+      sshagent(['ansadmin-ssh']) {
        sh 'scp -o StrictHostKeyChecking=no webapp/target/*.war ansadmin@54.197.155.33:/home/ansadmin/temptest/webapp.war'
       }
      }
