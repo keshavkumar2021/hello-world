@@ -8,7 +8,7 @@
 
 <html>
 	<head>
-		<title>SONAR</title>
+		<title>CLEANED UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->DAST DONE. CONTAINER SECURITY NEXT PROBABLY?<!--]--><br />
+								<p><!--[-->ANCHORE CONTAINER SECURITY, NIKTO -YET TO BE DONE<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
