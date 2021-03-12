@@ -4,6 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<%@ page import="org.apache.log4j.Logger" %>
+
+
 <html>
 	<head>
 		<title>SONAR</title>
@@ -14,7 +17,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body>
-
+        <% Logger log = Logger.getLogger("com.mobilefish.demo.test");
+           log.debug("Show DEBUG message");
+           log.info("Show INFO message");
+           log.warn("Show WARN message");
+           log.error("Show ERROR message");
+           log.fatal("Show FATAL message"); %>
+        <b>The log messages are shown in the Tomcat console and in the ${catalina.home}/logs/demo.log file.</b>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
