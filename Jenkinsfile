@@ -21,6 +21,12 @@ cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, no
      }
    }
    
+      stage ('Snyk-Scanning'){
+    steps{
+snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'snyk-api-token'
+    }
+   }
+   
     stage ('SAST') {
       steps {
         withSonarQubeEnv('sonar') {
@@ -29,28 +35,14 @@ cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, no
         }
       }
     }
-/*   stage ('Source Composition Analysis'){
-    steps{
-     sh 'rm owasp* || true'
-     sh 'wget "https://raw.githubusercontent.com/keshavkumar2021/webapp-1/master/owasp-dependency-check.sh"'
-     sh 'chmod +x owasp-dependency-check.sh'
-     sh 'bash owasp-dependency-check.sh'
-    }
-   } */
-   
+
     stage ('Build'){
       steps {
        sh 'mvn clean install package' 
       }
     }
    
-   stage ('Snyk-Scanning'){
-    steps{
-snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'snyk-api-token'
-    }
-   }
-   
-    stage ('Deploy-to-Tomcat'){
+    stage ('Deploy .war_file to Ansible'){
      steps {
 sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker', remoteDirectorySDF: false, removePrefix: 'webapp/target', sourceFiles: 'webapp/target/*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
      }
@@ -63,7 +55,13 @@ ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-project.y
      }
      } 
    
-
+    stage ('DAST') {
+      steps {
+        sshagent(['gcpssh']) {
+         sh 'ssh -o  StrictHostKeyChecking=no keshav@35.238.150.17 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://54.82.76.219:8080/webapp/" || true'
+        }
+      }
+    }
    
   }
 }
