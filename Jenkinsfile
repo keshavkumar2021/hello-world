@@ -21,6 +21,14 @@ cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, no
      }
    }
    
+    stage ('SAST') {
+      steps {
+        withSonarQubeEnv('sonar') {
+          sh 'mvn sonar:sonar'
+          sh 'cat target/sonar/report-task.txt'
+        }
+      }
+    }
 /*   stage ('Source Composition Analysis'){
     steps{
      sh 'rm owasp* || true'
