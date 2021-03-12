@@ -26,7 +26,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->GIT SECRETS DONE! Hope you're having a great day!<!--]--><br />
+								<p><!--[-->SAST NEXT! Hope you're having a great day!<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
