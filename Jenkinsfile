@@ -38,7 +38,7 @@ cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, no
    
    stage ('Snyk-Scanning'){
     steps{
-snykSecurity failOnIssues: false, snykTokenId: 'snyk-api-token'
+snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'snyk-api-token'
     }
    }
    
