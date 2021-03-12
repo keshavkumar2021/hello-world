@@ -13,13 +13,13 @@ pipeline {
       }
     }
    
-/*    stage ('Check-Git-Secrets'){
-     steps{
-      sh 'rm trufflehog || true'
-      sh 'docker run gesellix/trufflehog --json https://github.com/keshavkumar2021/webapp-1.git > trufflehog'
-      sh 'cat trufflehog'
+    stage ('Checking Git Secrets'){
+     steps {
+      sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-security-tooling', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '''rm trufflehog || true;
+docker run dxa4481/trufflehog --json https://github.com/keshavkumar2021/hello-world.git > trufflehog;
+cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
      }
-    } */
+   }
    
 /*   stage ('Source Composition Analysis'){
     steps{
@@ -48,6 +48,8 @@ sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfe
 ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-project.yml --limit 172.31.25.237''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
      }
      } 
+   
+
    
   }
 }
