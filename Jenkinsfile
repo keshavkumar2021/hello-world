@@ -37,9 +37,6 @@ cat trufflehog''', execTimeout: 120000, flatten: false, makeEmptyDirs: false, no
     }
    
    stage ('Snyk-Scanning'){
-    tools {
-        snyk '/var/lib/jenkins/tools/io.snyk.jenkins.tools.SnykInstallation/snyk'
-      }
     steps{
 snykSecurity failOnIssues: false, snykTokenId: 'snyk-api-token'
     }
