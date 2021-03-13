@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->ANCHORE CONTAINER SECURITY - TO WORK ON LOCAL SCANNING, NIKTO -YET TO BE DONE<!--]--><br />
+								<p><!--[-->DEVSEC COMPLIANCE SCANNER, NIKTO -YET TO BE DONE<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
