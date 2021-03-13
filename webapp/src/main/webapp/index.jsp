@@ -8,7 +8,7 @@
 
 <html>
 	<head>
-		<title>ANCHORE</title>
+		<title>DEVSEC</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->DEVSEC COMPLIANCE SCANNER, NIKTO -YET TO BE DONE<!--]--><br />
+								<p><!--[-->ANCHORE - to be done,DEVSEC COMPLIANCE SCANNER - Integration to be done, NIKTO -YET TO BE DONE<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
