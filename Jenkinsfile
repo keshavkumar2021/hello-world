@@ -61,7 +61,7 @@ sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfe
     stage ('DAST-by ZAP') {
       steps {
         sshagent(['gcpssh']) {
-         sh 'ssh -o  StrictHostKeyChecking=no keshav@35.238.150.17 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://54.82.76.219:8080/webapp/" || true'
+         sh 'ssh -o  StrictHostKeyChecking=no keshav@35.238.150.17 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://3.84.225.17:8080/webapp" || true'
         }
       }
     }
