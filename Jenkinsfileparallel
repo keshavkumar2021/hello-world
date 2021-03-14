@@ -79,7 +79,7 @@ sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfe
     parallel{
       stage ('Checking Amazon-Linux2 for HIPAA Compliance') {
         steps {
-sshPublisher(publishers: [sshPublisherDesc(configName: 'docker-host', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_hipaa  --results-arf arf.xml  --report report.html  /usr/share/xml/scap/ssg/content/ssg-amzn2-ds.xml', execTimeout: 1200000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
+sshPublisher(publishers: [sshPublisherDesc(configName: 'docker-host', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'oscap xccdf eval  --profile xccdf_org.ssgproject.content_profile_hipaa  --results-arf arf.xml  --report report.html  /usr/share/xml/scap/ssg/content/ssg-amzn2-ds.xml', execTimeout: 1200000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)]) || true
 echo "You can view the latest report at http://52.22.26.61:9988/report.html"
           }
         }
