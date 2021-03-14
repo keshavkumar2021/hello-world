@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->Vulnerability Scanning- to add more tools. OpenVAS, NIKTO -YET TO BE DONE<!--]--><br />
+								<p><!--[-->Welcome! Hope you're having a good day!<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
@@ -74,7 +74,12 @@ skepticism</li>
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
+								<h3 class="major">DevSecOps Project - Completed Tasks</h3>
+								<p>&#x2705; Create End to End CI/CD Pipeline - Git,Github,Jenkins,Ansible,Docker</p>
+								<p>&#x2705; Integrate Code Analysis Security tools - TruffleHog[For secrets scanning], Sonarqube[SAST], Snyk[Source Code Dependency Analysis]</p>
+								<p>&#x2705; Integrate Automated Vulnerability Analysis - ZAP [DAST]</p>
+								<p>&#x2705; Integrate Compliance Analysis - HIPAA Compliance[scan on Amazon Linux],OS Hardening</p>
+								<h3 class="major">DevSecOps Project - To-Do Tasks</h3>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
 
