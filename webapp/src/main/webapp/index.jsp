@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->ANCHORE - to be done,DEVSEC COMPLIANCE SCANNER - Integration to be done, NIKTO -YET TO BE DONE<!--]--><br />
+								<p><!--[-->Pushed HUGE Changes, OpenVAS, NIKTO -YET TO BE DONE<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
@@ -67,7 +67,7 @@ Common body of Knowledge such as GRC, IAM, SOC, Asset & Network Security etc.</l
 									 <li>Creative and constructive solutions to solve complications</li>
 									 <li>Ability to take direction, learn quickly, work independently, and maintain a level of professional
 skepticism</li>
-								 </ul> 
+								 </ul>
 							</article>
 
 						<!-- Work -->
