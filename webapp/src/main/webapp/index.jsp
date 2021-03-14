@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->Pushed HUGE Changes, OpenVAS, NIKTO -YET TO BE DONE<!--]--><br />
+								<p><!--[-->Vulnerability Scanning- to add more tools. OpenVAS, NIKTO -YET TO BE DONE<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
