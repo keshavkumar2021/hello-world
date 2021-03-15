@@ -80,7 +80,13 @@ skepticism</li>
 								<p>&#x2705; Integrate Automated Vulnerability Analysis - ZAP [DAST]</p>
 								<p>&#x2705; Integrate Compliance Analysis - HIPAA Compliance[scan on Amazon Linux],OS Hardening</p>
 								<h3 class="major">DevSecOps Project - To-Do Tasks</h3>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p><input type="checkbox" id="job1" name="job1" value="job1">
+							  <label for="job1"> Integrate a Docker Scanning tool - Anchore</label><br>
+							  <input type="checkbox" id="job2" name="job2" value="job2">
+							  <label for="job2"> Learn more about Threat Scanning</label><br>
+							  <input type="checkbox" id="job3" name="job3" value="job3">
+  							<label for="job3"> Learn and Utilize Kubernetes</label><br><br>
+								</p>
 							</article>
 
 						<!-- About -->
