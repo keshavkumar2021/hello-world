@@ -8,7 +8,7 @@
 
 <html>
 	<head>
-		<title>INDEX</title>
+		<title>welcome</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -78,7 +78,7 @@ skepticism</li>
 								<p>&#x2705; Create End to End CI/CD Pipeline - Git,Github,Jenkins,Ansible,Docker</p>
 								<p>&#x2705; Integrate Code Analysis Security tools - TruffleHog[For secrets scanning], Sonarqube[SAST], Snyk[Source Code Dependency Analysis]</p>
 								<p>&#x2705; Integrate Automated Vulnerability Analysis - ZAP [DAST]</p>
-								<p>&#x2705; Integrate Compliance Analysis - HIPAA Compliance[scan on Amazon Linux],OS Hardening</p>
+								<p>&#x2705; Integrate Compliance Analysis - PCI-DSS Compliance[scan on Cent OS],OS Hardening</p>
 								<h3 class="major">DevSecOps Project - To-Do Tasks</h3>
 								<p><input type="checkbox" id="job1" name="job1" value="job1">
 							  <label for="job1"> Integrate a Docker Scanning tool - Anchore</label><br>
