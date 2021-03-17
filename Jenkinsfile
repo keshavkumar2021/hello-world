@@ -45,23 +45,23 @@ snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'snyk-a
    
     stage ('Deploying packaged code to Ansible'){
      steps {
-sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker', remoteDirectorySDF: false, removePrefix: 'webapp/target', sourceFiles: 'webapp/target/*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
+sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-ansible-machine', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '//opt//docker', remoteDirectorySDF: false, removePrefix: 'webapp/target', sourceFiles: 'webapp/target/*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
      } 
 
     stage ('Building & Pushing the Docker image of the Packaged Application to DockerHub'){
      steps {
-sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-image.yml --limit localhost', execTimeout: 1200000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
+sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-ansible-machine', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-image.yml --limit localhost', execTimeout: 1200000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
      } 
    
     stage ('Pulling the latest docker image and running it as a container'){
      steps {
-sshPublisher(publishers: [sshPublisherDesc(configName: 'ansible-server', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-project.yml --limit 172.31.25.237', execTimeout: 12000000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
+sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-ansible-machine', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'ansible-playbook -i /opt/docker/hosts /opt/docker/create-simple-devops-project.yml --limit 10.128.0.5', execTimeout: 12000000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])     }
      } 
    
     stage ('DAST-by ZAP') {
       steps {
         sshagent(['gcpssh']) {
-         sh 'ssh -o  StrictHostKeyChecking=no keshav@35.238.150.17 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://3.84.225.17:8080/webapp" || true'
+         sh 'ssh -o  StrictHostKeyChecking=no keshav@35.238.150.17 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://34.71.5.5:8080/webapp/" || true'
         }
       }
     }
