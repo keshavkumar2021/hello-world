@@ -81,7 +81,7 @@ sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-ansible-machine', tr
         steps {
           script{
             try{
-              sshPublisher(publishers: [sshPublisherDesc(configName: 'docker-host', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --results-arf arf.xml --report ssg-centos7-xccdf.html /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml', execTimeout: 12000000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
+              sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-docker-machine-keshav', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --results-arf arf.xml --report ssg-centos7-xccdf.html /usr/share/xml/scap/ssg/content/ssg-centos7-ds.xml', execTimeout: 12000000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
             } catch(Exception e){
   echo "You can view the latest report at http://34.71.5.5:9988/ssg-centos7-xccdf.html"
             }
