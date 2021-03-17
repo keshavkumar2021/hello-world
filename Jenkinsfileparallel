@@ -85,9 +85,9 @@ sshPublisher(publishers: [sshPublisherDesc(configName: 'gcp-ansible-machine', tr
             } catch(Exception e){
   echo "You can view the latest report at http://34.71.5.5:9988/ssg-centos7-xccdf.html"
             }
-          } 
+          }
 
-echo "You can view the latest report at http://34.71.5.5:9988/report.html"
+echo "You can view the latest report at http://34.71.5.5:9988/ssg-centos7-xccdf.html"
           }
         }
       stage ('OS Hardening'){
