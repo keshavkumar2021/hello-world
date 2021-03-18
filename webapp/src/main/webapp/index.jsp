@@ -8,7 +8,7 @@
 
 <html>
 	<head>
-		<title>welcome</title>
+		<title>God</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Keshav Kumar</h1>
-								<p><!--[-->Greetings of the day! Hope you're having a good day!<!--]--><br />
+								<p><!--[-->So Help me God! Hope you're having a good day!<!--]--><br />
 								<!--[-->Below are a few links to check out my Profile!<!--]--></p>
 							</div>
 						</div>
